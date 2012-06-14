@@ -1,8 +1,7 @@
-var fs = require('fs')
-,	xml2json = require('./xml2json')
-,	json;
+var json
+,	readData = require('./readData');
 
-json = JSON.parse(xml2json.parser(fs.readFileSync("ProNet.xml", 'utf8')));
+json = readData.readData();
 
 function maybeArrayToString(input) {
 	if(input.join) return input.join(", ");
