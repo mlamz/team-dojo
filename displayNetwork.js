@@ -1,5 +1,5 @@
 function display(){
-  	return "Programmers"; 
+  	return "Programmers\tSkills\tRecommends\n"; 
 }
   
 console.log(display());

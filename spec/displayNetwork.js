@@ -4,6 +4,6 @@ var should = require('chai').should()
 describe("when I call display", function () {
   var output = displayNetwork.display();
   it("should show me a three column display", function () {
-    output.should.equal("Programmers");
+    output.indexOf("Programmers\tSkills\tRecommends").should.equal(0);
   });
 });
