@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "mocha" : "1.1.0",
-    "chai" : "1.0.4"
+    "chai" : "1.0.4",
+    "node-expat" : "latest"
   },
   "devDependencies": {},
   "optionalDependencies": {},
