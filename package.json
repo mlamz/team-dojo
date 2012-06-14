@@ -1,0 +1,21 @@
+{
+  "author": "",
+  "name": "js-team-dojo",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/antonydenyer/nodejs-team-dojo.git"
+  },
+  "scripts": {
+    "test": "mocha spec"
+  },
+  "dependencies": {
+    "mocha" : "1.1.0",
+    "chai" : "1.0.4"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
