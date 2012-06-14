@@ -6,4 +6,10 @@ describe("when I call display", function () {
   it("should show me a three column display", function () {
     output.indexOf("Programmers\tSkills\tRecommends").should.equal(0);
   });
+  
+  it("should show the correct data for the first programmer", function () {
+    var firstProgrammer = output.split("\n")[1];
+    
+    firstProgrammer.should.equal("Bill\tRuby, Perl, PHP\tJason, Jill, Nick, Stu");
+  });
 });
