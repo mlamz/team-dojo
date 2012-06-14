@@ -12,4 +12,10 @@ describe("when I call display", function () {
     
     firstProgrammer.should.equal("Bill\tRuby, Perl, PHP\tJason, Jill, Nick, Stu");
   });
+  
+  it("should show the correct number of programmers", function () {
+  	var programmerCount = output.split("\n").length - 1;
+  	
+  	programmerCount.should.equal(10);
+  });
 });
