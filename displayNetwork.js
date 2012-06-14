@@ -23,12 +23,6 @@ function display(){
 	return output;
 }  
 
-function readXml(){
-	
-	return callback((file));
-}
-
-
 console.log(display());
 
 module.exports = {
