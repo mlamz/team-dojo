@@ -15,13 +15,13 @@ var	kudos = require("./kudos")
 
 		}
 		
-		rankedProgrammers = rankedProgrammers.sort(function (programmer) {
-			return programmer.kudos;
+		rankedProgrammers = rankedProgrammers.sort(function (a, b) {
+			return b.kudos - a.kudos;
 		});
 		
 		for(i = 0; i < programmerCount; i = i + 1){
 			programmer = rankedProgrammers[i];
-			output += "\n" + programmer.name + "\t" + kudos.calculate();
+			output += "\n" + programmer.name + "\t" + programmer.kudos;
 		}
 		
 		return output;
